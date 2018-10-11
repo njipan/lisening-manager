@@ -1,6 +1,6 @@
 import React from "react";
 import { Header, Footer } from "../../layouts";
-import Routes from "../../components/Routes";
+import { Switch, Route } from "react-router-dom";
 import routes from "../../routes/dashboard";
 
 class Dashboard extends React.Component {
@@ -13,7 +13,17 @@ class Dashboard extends React.Component {
         <Header />
         <main>
           <div className="container">
-            <Routes routes={routes} />
+            <Switch>
+              {routes.map(route => {
+                return (
+                  <Route
+                    path={route.path}
+                    component={route.component}
+                    exact={route.exact}
+                  />
+                );
+              })}
+            </Switch>
           </div>
         </main>
         <Footer />
