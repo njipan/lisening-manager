@@ -1,0 +1,207 @@
+.blue {
+  color: #00a9e2;
+}
+#root{
+  height: 100%;
+  width: 100%;
+}
+.bg-blue {
+  background: #00a9e2 !important;
+  color: #fff !important;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.bg-red {
+  background: red !important;
+  color: white !important;
+}
+#body-login {
+  background: linear-gradient(-30deg, #00d2ff, #3a7bd5);
+  min-height: 100%;
+  position: relative;
+}
+canvas {
+  left: 0;
+  position: fixed;
+}
+.logo-binus-login {
+  width: 120px;
+  height: 100px;
+  background: url("../images/logo.png") center no-repeat;
+  background-size: contain;
+  display: block;
+  margin-left: 15px;
+}
+.CI-banner-login {
+  top: 0;
+  left: 10px;
+  width: 35px;
+  height: 108px;
+  position: absolute;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAABsCAYAAADg1wvgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABHlJREFUeNrsm01S2zAUxyVZiUOAkJQylFV7i27KGXqPzvQeXfYCrLhBb9AVM12123bTTTsU6EAJIV+21Pe35WAcyx/5YOhUmtEQnGf5p6f3aQbO3n/R7JEMwR7RcDAOxsE4GAfjYByMg3EwDsbBOBgH42AcjINxMA7GwTgYB+NgHIyDcTAOxsE4mIcccqWrebQ3wePP+JtwENaEOeitZ5sAOb9+JMfEuTNgB/MP2wx3x+Rg/rOgJ9/u+VFuk4TVELzQOTabotSB2g3BWh5nkjTz7cBnuoYiJRYIVTwDoVmLruQhNb1itTdpI13fY2mxBv0yCavh4H7hpTYLoEmQf/Nmww4DLTzJgGBsyOp2s0UaFTia9OlMFZtTLRaFsH0hnmuvbRkfWdno0PFD81FxhRsmSrNAxV8qFddJeECXBLdLbMX37N/3Wh4b0A77NLXO3sejtRNblYnlgQybJyYSIE2QEIRt+4Ip3NCRjukGzRXb8EhDUrA8BW7SRRj2lG4KiEjQqrCnrNJk1qIhsNWwqxebu5pqdjnRTJkDDUehuVexZy3B9nwxtwlunKBZkLRE3gW/4JwvCOL3RM1AogpTGSja9Y9hGM2VROAOdmVhGZCa/0zV3HXYW9oezseK5PRyMG3ymh3fboyXlgfg6jC8D3Q2Vou1KjgWuGeZ14wLtK+IZEAGDc/AHEbBrl5+4he3QWV9/hwE5KZkvGSwVyU7B0ZZ9OUmhjVNaKnVxEkRaxDe1vHJUPsBsz2vLBVAe13yvMRXwmnNrJ2O1DtNjz3vNKwHUZQKsE4vBbJQCYHdpBdAMOtShM1LekgFtgEnySsQatczLXl/oV7G+wDcywGctePcHsdqN/6IQUlon6q45AAcIPAQfMdL7G7lbyFgoJiaXHq/XX0ZvqqyU+U4R9Xi6a5E0eurgQc1wz7YbUBLwUAr/Un9sH891rm18cIwQ0qYvygiL/JPC9DM5UjNBUxZVxMjyh63BFIlixR5Dk4KKQVRAHIoSWTVbLZLpRyVjhq7aVCZuZFjuHGuoQqR3B0lbDv6SdVgGM+SgPpO4iFVxvfr6SxoeZ7JzPTExBY9jlaFQrzRRlJwYdcyikGxfel1dJR4JrTAjUaipJc6lmzxDaCyJnCpV69R5DVa8ir01k2jpWAdrp3kIt/jteTXFvTiPr0aTJIkm6tKlHn1L7Se5dEZe0EvBq2gnt8OeRRjYNA3KaNeWjNh1InqXMi7kuKuawyNZUM58L69tjfrRpaGwU5vA2UtNzqphg7MYQYcx7Zr6h+xHEislSgy5wQ1uH7aPGwZHiUqNf8dsQzIKJUS+tTHDO9pSM9aZDAMSTbUuugFwdNaBoy1sCCOJmsn+A0Gid1HGhEwUv2VxAaEdBO7v93rSDuntWDIBjheDMW1No8emjf227ENfD4bjxHrKpUVE/ayMswLaksWGJ9ovqoqu9q/xJlBGkk+HteAOV73q9cjmicV5CBztG4YvCp4XQJ0YmTCh3gpfU7zkOYbmh/NtVOaH8y1QyPD/gowANeSk+9SJ2NMAAAAAElFTkSuQmCC);
+  z-index: 1;
+}
+footer-login {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+.item-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error {
+  color: indianred !important;
+}
+.login-container .item-center {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.login-container .form-login {
+  width: 350px;
+  height: 344px;
+  background: white;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 15px 50px;
+}
+@media screen and (max-width: 350px) {
+  .login-container .form-login {
+    width: 100%;
+    margin: 0;
+  }
+}
+.login-container .form-login label::selection {
+  background: transparent;
+}
+.login-container .form-login .input-control {
+  width: 100%;
+  position: relative;
+  margin: 10px 0;
+}
+.login-container .form-login .input-control:first-of-type {
+  margin-top: 60px;
+}
+.login-container .form-login .input-control input,
+.login-container .form-login .input-control select {
+  width: 100%;
+  height: auto;
+  padding: 7px 10px 7px 35px;
+  box-shadow: none;
+  border: 1px solid #bbb;
+  transition: border-color 0.1s ease-out;
+}
+.login-container .form-login .input-control input:focus,
+.login-container .form-login .input-control select:focus {
+  outline: 0;
+  border-color: #00a9e2;
+  color: #00a9e2;
+}
+.login-container .form-login .input-control input:focus::-webkit-input-placeholder,
+.login-container .form-login .input-control select:focus::-webkit-input-placeholder {
+  color: #00a9e2;
+}
+.login-container .form-login .input-control input:focus:-moz-placeholder,
+.login-container .form-login .input-control select:focus:-moz-placeholder {
+  color: #00a9e2;
+}
+.login-container .form-login .input-control input:focus::-moz-placeholder,
+.login-container .form-login .input-control select:focus::-moz-placeholder {
+  color: #00a9e2;
+}
+.login-container .form-login .input-control input:focus:-ms-input-placeholder,
+.login-container .form-login .input-control select:focus:-ms-input-placeholder {
+  color: #00a9e2;
+}
+.login-container .form-login .input-control input:focus + .fa,
+.login-container .form-login .input-control select:focus + .fa {
+  color: #00a9e2;
+}
+.login-container .form-login .input-control .fa {
+  top: 0;
+  left: 0;
+  color: #bbb;
+  position: absolute;
+  padding: 9px 10px;
+  font-size: 15pt;
+  transition: color 0.1s ease-out;
+}
+.login-container .form-login .input-control input.ng-dirty.ng-invalid {
+  border-color: indianred;
+}
+.login-container .form-login .input-control input.ng-dirty.ng-invalid::-webkit-input-placeholder {
+  color: indianred;
+}
+.login-container .form-login .input-control input.ng-dirty.ng-invalid:-moz-placeholder {
+  color: indianred;
+}
+.login-container .form-login .input-control input.ng-dirty.ng-invalid::-moz-placeholder {
+  color: indianred;
+}
+.login-container .form-login .input-control input.ng-dirty.ng-invalid:-ms-input-placeholder {
+  color: indianred;
+}
+.login-container .form-login .input-control input.ng-dirty.ng-invalid + .fa {
+  color: indianred;
+}
+.login-container .form-login input[type="checkbox"] {
+  display: none;
+}
+.login-container .form-login input[type="checkbox"] + label {
+  position: relative;
+  padding: 10px 10px 10px 30px;
+  cursor: pointer;
+  color: #777;
+}
+.login-container .form-login input[type="checkbox"] + label::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #bbb;
+  top: 10px;
+  left: 0;
+}
+.login-container .form-login input[type="checkbox"] + label::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 13px;
+  left: 3px;
+  background: #00a9e2;
+  border-radius: 2px;
+  opacity: 0;
+}
+.login-container .form-login input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+}
+.login-container .form-login button {
+  width: 100%;
+  background: #00a9e2;
+  padding: 7px;
+  border: 0;
+  color: white;
+  transition: background 0.1s ease-out;
+}
+.login-container .form-login button:hover,
+.login-container .form-login button:focus {
+  box-shadow: 0;
+  background: #0096c9;
+}
+.login-container .form-login .message:not(:first-child) {
+  margin-top: 10px;
+}
+.login-container .form-login .message:not(:last-child) {
+  margin-bottom: 10px;
+}

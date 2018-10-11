@@ -1,0 +1,51 @@
+﻿.vendor(@prop, @value) {
+    -webkit-@{prop}: @value;
+    -moz-@{prop}: @value;
+    -ms-@{prop}: @value;
+    -o-@{prop}: @value;
+    @{prop}: @value;
+}   
+
+.input-placeholder(@color) {
+    &::-webkit-input-placeholder {
+        color: @color;
+    }
+
+    &:-moz-placeholder {
+        color: @color;
+    }
+
+    &::-moz-placeholder {
+        color: @color;
+    }
+
+    &:-ms-input-placeholder {
+        color: @color;
+    }
+}
+
+//debug purpose
+/*
+* {
+    outline: 1px solid rgb(255,0,0);
+
+    & > * {
+        outline: 1px solid rgb(0,255,0);
+
+        & > * {
+            outline: 1px solid rgb(0,0,255);
+
+            & > * {
+                outline: 1px solid rgb(255,255,0);
+
+                & > * {
+                    outline: 1px solid rgb(255,0,255);
+
+                    & > * {
+                        outline: 1px solid rgb(0,255,255);
+                    }
+                }
+            }
+        }
+    }
+}*/
