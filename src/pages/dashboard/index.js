@@ -12,19 +12,17 @@ class Dashboard extends React.Component {
       <div>
         <Header />
         <main>
-          <div className="container">
-            <Switch>
-              {routes.map(route => {
-                return (
-                  <Route
-                    path={route.path}
-                    component={route.component}
-                    exact={route.exact}
-                  />
-                );
-              })}
-            </Switch>
-          </div>
+          <Switch>
+            {routes.map(route => {
+              return (
+                <Route
+                  path={route.path}
+                  component={route.component}
+                  exact={route.exact}
+                />
+              );
+            })}
+          </Switch>
         </main>
         <Footer />
       </div>

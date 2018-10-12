@@ -1,1 +1,2 @@
-export { default as SubjectContainer } from "./Subject";
+export { default as Subject } from "./Subject";
+export { default as Category } from "./Category";

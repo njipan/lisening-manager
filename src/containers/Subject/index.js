@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import routes from "../../routes/subject";
 
-class SubjectContainer extends React.Component {
+class Subject extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -40,4 +40,4 @@ class SubjectContainer extends React.Component {
   }
 }
 
-export default SubjectContainer;
+export default Subject;
