@@ -47,7 +47,7 @@ export class InsertCategory extends Component {
   };
 }
 
-const actionDispatch = dispatch => {
+const dispatchActions = dispatch => {
   return {
     addCategory: name =>
       dispatch({
@@ -59,5 +59,5 @@ const actionDispatch = dispatch => {
 
 export default connect(
   null,
-  actionDispatch
+  dispatchActions
 )(InsertCategory);

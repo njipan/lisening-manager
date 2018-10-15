@@ -8,13 +8,14 @@ import reducers from "./reducers";
 import { Provider } from "react-redux";
 
 const store = createStore(reducers);
-
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <Switch>
-        {routes.map(route => {
-          return <Route path={route.path} component={route.component} />;
+        {routes.map((route, index) => {
+          return (
+            <Route path={route.path} component={route.component} key={index} />
+          );
         })}
       </Switch>
     </BrowserRouter>

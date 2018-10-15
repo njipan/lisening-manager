@@ -1,6 +1,5 @@
-import Audio from "../components/Audio";
 import NotFound from "./NotFound";
-import { Subject, Category } from "../containers";
+import { Subject, Category, Audio } from "../containers";
 
 const dashboard = [
   { path: "/audios", component: Audio },

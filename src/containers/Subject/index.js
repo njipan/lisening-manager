@@ -3,10 +3,6 @@ import { Route, Switch } from "react-router-dom";
 import routes from "../../routes/subject";
 
 class Subject extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <React.Fragment>

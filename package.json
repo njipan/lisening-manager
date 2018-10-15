@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "prop-types": "^15.6.2",
+    "query-string": "^6.2.0",
     "react": "^16.4.1",
     "react-app-env": "^1.2.2",
+    "react-bootstrap-select": "^0.14.0",
     "react-dom": "^16.4.1",
     "react-load-script": "0.0.6",
     "react-redux": "^5.0.7",

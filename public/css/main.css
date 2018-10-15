@@ -1557,3 +1557,14 @@ span[action] {
 #initial-box {
   width: 30%;
 }
+
+.paginate {
+  background-color: #fff !important;
+  color: #337ab7 !important;
+  border: 1px solid gainsboro;
+  box-shadow: none;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
