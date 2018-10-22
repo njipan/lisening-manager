@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 
-export class InsertCategory extends Component {
+export default class InsertCategory extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
     this.state = {
       name: ""
     };
@@ -43,21 +41,6 @@ export class InsertCategory extends Component {
   };
 
   handleSubmit = () => {
-    this.props.addCategory(this.state.name);
+    this.props.onInsert({ category_name: this.state.name });
   };
 }
-
-const dispatchActions = dispatch => {
-  return {
-    addCategory: name =>
-      dispatch({
-        type: "ADD_CATEGORY",
-        payload: { name: name }
-      })
-  };
-};
-
-export default connect(
-  null,
-  dispatchActions
-)(InsertCategory);

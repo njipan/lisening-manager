@@ -1,15 +1,16 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
+
 import CategoryItem from "./CategoryItem";
 import Pagination from "../../components/Pagination";
 
-export class Categories extends Component {
+export default class Categories extends Component {
   constructor(props) {
     super(props);
     this.state = {
       search: ""
     };
   }
+
   render() {
     return (
       <div className="container">
@@ -58,24 +59,3 @@ export class Categories extends Component {
     this.setState({ search: event.target.value });
   };
 }
-
-const mapToState = state => {
-  return {
-    categories: state.categories
-  };
-};
-
-const dispatchActions = dispatch => {
-  return {
-    onPaginate: payload =>
-      dispatch({
-        type: "CATEGORY_ON_PAGINATE",
-        payload: payload
-      })
-  };
-};
-
-export default connect(
-  mapToState,
-  dispatchActions
-)(Categories);

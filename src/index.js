@@ -3,11 +3,12 @@ import ReactDOM from "react-dom";
 import registerServiceWorker from "./registerServiceWorker";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import routes from "./routes/main";
-import { createStore } from "redux";
-import reducers from "./reducers";
+import { createStore, applyMiddleware, compose } from "redux";
+import thunk from "redux-thunk";
+import reducers from "./stores";
 import { Provider } from "react-redux";
 
-const store = createStore(reducers);
+const store = compose(applyMiddleware(thunk))(createStore)(reducers);
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>

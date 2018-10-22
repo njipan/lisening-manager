@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import CategoryReducer from "./CategoryReducer";
+import CategoryReducer from "./categories/CategoryReducer";
 
 const reducers = combineReducers({
   categories: CategoryReducer
